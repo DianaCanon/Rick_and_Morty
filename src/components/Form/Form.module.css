@@ -1,19 +1,30 @@
 .containForm {
+  background: #242844bd;
+  color: white;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem #2e2828b4;
+  min-width: 60%;
+  min-height: 18rem;
+}
+
+.formContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-it: center;
-  background: #242844bd;
-  color: white;
-  margin: 5rem 8rem auto;
-  border-radius: 2rem;
-  box-sizing: border-box;
-  box-shadow: 0.5rem 0.5rem #2e2828b4;
-  padding-bottom: 2rem;
-  gap:1rem;
+}
+
+.formContainer input {
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.formContainer label {
+  font-weight: 400;
 }
 
 .tituloForm {
+  text-align: center;
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -21,45 +32,46 @@
   border: 1px solid rgb(170, 24, 24);
   border-radius: 0.3em;
   background-color: rgb(211, 149, 157);
+  text-align: center;
 }
 
 .danger {
-  margin: auto;
   font-size: 1rem;
   color: rgb(206, 34, 34);
-  margin-left: 10em;
   font-weight: 600;
   text-shadow: 2px 2px 4px #000000;
+  text-align: center;
 }
 
 .buttonLogin {
   font-size: 1rem;
   border: none;
   border-radius: 1.5rem;
-  background: #0b1463d5;
+  background: linear-gradient(#ffffffc2,#2ddf09d7, #2ddf09d7, #162c12d9);
   padding: 0.6rem 1.2rem;
   margin: 1.5rem;
   overflow: hidden;
   text-decoration: none;
-  color: rgb(168, 236, 10);
-  text-shadow: 2px 2px 4px #221e1e;
-  box-shadow: 0.2rem 0.2rem #0f071d;
+  font-weight: 550;
+  color: rgb(223 222 233);
+  text-shadow: 4px 2px 4px #141313;
+  box-shadow: 0.1rem 0.1rem #161618;
   transition: width 2s, height 2s;
   position: relative;
 }
 
 .buttonLogin:before {
-  content:"";
+  content: "";
   position: absolute;
   top: 0px;
   left: 0px;
   width: 0px;
   height: 100%;
-  background: rgba(17, 212, 226, 0.377);
+  background: rgba(226, 212, 17, 0.377);
   color: #221e1e;
   transition: all 1s ease;
 }
 .buttonLogin:hover:before {
-width: 100%;
-color:rgb(75, 72, 72)
+  width: 100%;
+  color: rgb(75, 72, 72);
 }

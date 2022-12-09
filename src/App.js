@@ -75,24 +75,26 @@ function App(props) {
   }, [access]);
 
   return (
-    <div>
+    <div >
       {location.pathname !== "/" && (
-        <div className="App" style={{ padding: "25px" }}>
+        <div className="App">
           <Nav onSearch={onSearch} logout={logout} />
         </div>
       )}
-      <Routes>
-        <Route exact path="/" element={<Form login={login} />} />
-        <Route
-          exact
-          path="/home"
-          element={<Cards characters={characters} onClose={onClose} />}
-        />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/detail/:detailId" element={<Detail />} />
-        <Route exact path="/favorites" element={<Favorites />}/>
-        <Route path="*" element={<Error404 />} />
-      </Routes>
+      <div className="container">
+        <Routes>
+          <Route exact path="/" element={<Form login={login} />} />
+          <Route
+            exact
+            path="/home"
+            element={<Cards characters={characters} onClose={onClose} />}
+          />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/detail/:detailId" element={<Detail />} />
+          <Route exact path="/favorites" element={<Favorites />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </div>
     </div>
   );
 }

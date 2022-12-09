@@ -21,9 +21,11 @@ const reducer = (state = initialState, action) => {
     case DELETE_FAVORITE:
       return {
         ...state,
-        myFavorites: state.myFavorites.filter(
+        allCharacters: state.allCharacters.filter(
           (fav) => fav.id !== action.payload
-        ),
+        ), myFavorites: state.allCharacters.filter(
+          (fav) => fav.id !== action.payload
+        )
       };
     case FILTER:
       const copyfilter = [...state.allCharacters];

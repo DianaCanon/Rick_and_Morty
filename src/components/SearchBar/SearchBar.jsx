@@ -30,7 +30,6 @@ export default function SearchBar(props) {
       >
         Personaje Sorpresa
       </button>
-    
     </div>
   );
 }

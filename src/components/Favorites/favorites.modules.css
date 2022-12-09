@@ -1,11 +1,7 @@
-.container {
-  margin: 6rem auto auto 2rem;
+.containerFavorites {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly;
-  gap: 3rem;
+  flex-direction: column;
+  width: 100%;
 }
 .buttonHome {
   background-color: #39b1b1c7;
@@ -28,4 +24,37 @@
   border-bottom: 0.15rem solid rgba(145, 196, 43, 0.788);
   border-right: 0.15rem solid rgba(145, 196, 43, 0.788);
   color: white;
+}
+
+.containerCards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.3rem;
+  margin-top: 3.3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.containerHome {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: greenyellow;
+  font-size: 1rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  text-shadow: 2px 2px #100b0be1;
+}
+
+.containerHome select {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
+
+.containerHome span {
+  margin-right: 0.3rem;
 }

@@ -25,29 +25,33 @@ export default function Detail(props) {
   }, [detailId]);
 
   return (
-    
-    <div>
-      <div className={styles.contain}>
-          <button className={styles.buttonDetail} onClick={() => navigate("/home")}>
-            Home
-          </button>
+    <div className={styles.containerDetail}>
+      <div >
+        <button
+          className={styles.buttonDetail}
+          onClick={() => navigate("/home")}
+        >
+          Home
+        </button>
+      </div >
+      {character ? (
+        <div className={styles.contain}>
+          <div className={styles.containText}>
+            <img
+              src={character.image}
+              alt="imagen {character.name}"
+              className={styles.imgDetail}
+            />
+            <h1>NOMBRE: {character.name}</h1>
+            <h2>STATUS: {character.status}</h2>
+            <h2>ESPECIE: {character.species}</h2>
+            <h2>GENERO: {character.gender}</h2>
+            <h2>ORIGEN: {character.origin?.name}</h2>
+          </div>
         </div>
-      {character?(
-      <div>
-        
-        <div className={styles.containText}>
-          <img
-            src={character.image}
-            alt="imagen {character.name}"
-            className={styles.imgDetail}
-          />
-          <h1>NOMBRE: {character.name}</h1>
-          <h2>STATUS: {character.status}</h2>
-          <h2>ESPECIE: {character.species}</h2>
-          <h2>GENERO: {character.gender}</h2>
-          <h2>ORIGEN: {character.origin?.name}</h2>
-        </div>
-      </div>): ''}
+      ) : (
+        ""
+      )}
     </div>
   );
 }

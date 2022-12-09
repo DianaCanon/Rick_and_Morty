@@ -4,7 +4,6 @@ const ContainAbout = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: auto 2rem;
   position: absolute;
   top: 8rem;
 `;
@@ -33,10 +32,11 @@ const ButtonAbout = styled.button`
 
 const ContainText = styled.div`
   background-color: #080a1abd;
-  padding: 1rem;
+  padding: 0 4rem;
   border-radius: 1rem;
   align-items: center;
   color: white;
+  max-width: 30rem;
 `;
 
 const Titulo = styled.h1`
