@@ -5,7 +5,7 @@ const ContainAbout = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   position: absolute;
-  top: 8rem;
+  top: 5rem;
 `;
 
 const ButtonAbout = styled.button`
