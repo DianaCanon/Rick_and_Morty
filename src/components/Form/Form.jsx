@@ -73,6 +73,8 @@ export default function Form(props) {
         </button>
         <br />
       </form>
+      <div style={{color: "white"}} className={style.danger}>Datos ingreso: username: alguien@gmail.com; password: ABC123
+      </div>
     </div>
   );
-}
+} 
