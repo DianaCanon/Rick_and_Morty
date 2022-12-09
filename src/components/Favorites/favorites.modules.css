@@ -30,7 +30,6 @@
   display: flex;
   justify-content: space-evenly;
   padding: 0.3rem;
-  margin-top: 3.3rem;
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -44,6 +43,7 @@
   color: greenyellow;
   font-size: 1rem;
   position: fixed;
+  top: 3.5rem;
   right: 0;
   left: 0;
   z-index: 100;
