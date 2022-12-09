@@ -5,13 +5,13 @@ const ContainAbout = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   position: absolute;
-  top: 5rem;
+  top: 6rem;
 `;
 
 const ButtonAbout = styled.button`
   background-color: #39b1b1c7;
   color: white;
-  width: fit-content;
+  width: -webkit-fit-content;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 0.5rem;
